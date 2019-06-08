@@ -123,4 +123,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.incremental.enable=module:/vendor/lib/modules/incrementalfs.ko
 
+# GMS
+WITH_GMS_FI := true
+
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
