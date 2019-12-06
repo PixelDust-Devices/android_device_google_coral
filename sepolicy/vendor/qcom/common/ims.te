@@ -67,3 +67,4 @@ dontaudit hal_rcsservice sysfs_faceauth:dir r_dir_perms;
 dontaudit hal_rcsservice sysfs_faceauth:file r_file_perms;
 
 allow ims diag_device:chr_file w_file_perms;
+allow ims sysfs_faceauth:dir r_dir_perms;
