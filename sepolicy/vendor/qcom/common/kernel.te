@@ -6,3 +6,4 @@ userdebug_or_eng(`
 allow kernel debugfs_batteryinfo:dir search;
 allow kernel debugfs_wlan:dir search;
 allow kernel debugfs_ipc:dir search;
+allow kernel self:qipcrtr_socket create;
