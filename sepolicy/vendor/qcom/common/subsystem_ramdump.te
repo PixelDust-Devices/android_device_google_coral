@@ -22,3 +22,6 @@ userdebug_or_eng(`
   set_prop(vendor_subsystem_ramdump, vendor_ssr_prop);
   get_prop(vendor_subsystem_ramdump, vendor_ramdump_prop);
 ')
+
+allow vendor_subsystem_ramdump self:capability sys_admin;
+allow vendor_subsystem_ramdump sysfs_ssr:file r_file_perms;
