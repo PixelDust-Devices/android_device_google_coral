@@ -636,4 +636,7 @@
     <!-- Whether device supports variable refresh rate -->
     <bool name="config_hasVariableRefreshRate">true</bool>
 
+    <!-- Whether or not aware is enabled by default -->
+    <bool name="config_awareSettingAvailable">true</bool>
+
 </resources>
