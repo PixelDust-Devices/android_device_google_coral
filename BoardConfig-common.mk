@@ -49,6 +49,7 @@ BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3 swiotlb=2048
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := latest
 TARGET_KERNEL_SOURCE := kernel/google/floral
 TARGET_KERNEL_CONFIG := floral_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.lz4
