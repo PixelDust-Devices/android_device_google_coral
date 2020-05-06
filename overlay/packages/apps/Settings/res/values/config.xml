@@ -28,4 +28,5 @@
     <bool name="config_gesture_settings_enabled">true</bool>
 
     <bool name="config_show_touch_sensitivity">true</bool>
+
 </resources>
