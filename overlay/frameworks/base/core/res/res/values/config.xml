@@ -642,7 +642,4 @@
     <!-- Whether or not aware is enabled by default -->
     <bool name="config_awareSettingAvailable">true</bool>
 
-    <!-- Whether or not aware is enabled by default -->
-    <bool name="config_awareSettingAvailable">true</bool>
-
 </resources>
