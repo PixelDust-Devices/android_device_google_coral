@@ -106,3 +106,16 @@ persist.radio.rat_on=combine
 persist.radio.data_ltd_sys_ind=1
 persist.radio.data_con_rprt=1
 persist.radio.calls.on.ims=1
+
+# missing vendor props
+drm.service.enabled=true
+media.mediadrmservice.enable=true
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
+
+# atrace
+ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
