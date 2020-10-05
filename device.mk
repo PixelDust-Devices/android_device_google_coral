@@ -1021,6 +1021,13 @@ include hardware/google/pixel/thermal/device.mk
 # power HAL
 -include hardware/google/pixel/power-libperfmgr/aidl/device.mk
 
+# Build necessary packages for system
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder \
+    libmediaplayerservice:32 \
+    libstagefright_httplive:32
+
 # Build necessary packages for vendor
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
@@ -1032,6 +1039,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libcodec2_hidl@1.0.vendor:32 \
     libcodec2_vndk.vendor \
+    libcppbor.vendor:64 \
     libdisplayconfig \
     libdrm.vendor \
     libgooglecamerahal.vendor \
@@ -1054,6 +1062,7 @@ PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice.vendor:64 \
     libsensorndkbridge \
     libsoft_attestation_cert.vendor:64 \
+    libteeui_hal_support.vendor:64 \
     libtextclassifier_hash.vendor:64 \
     libtinycompress \
     libtinyxml \
