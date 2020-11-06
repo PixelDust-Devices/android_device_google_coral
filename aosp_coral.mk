@@ -61,3 +61,7 @@ PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_coral
 PRODUCT_DEVICE := coral
 PRODUCT_MODEL := AOSP on coral
+
+LOCAL_PATH := device/google/coral
+
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/coral.prop

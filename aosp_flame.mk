@@ -62,3 +62,7 @@ PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_flame
 PRODUCT_DEVICE := flame
 PRODUCT_MODEL := AOSP on flame
+
+LOCAL_PATH := device/google/coral
+
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/flame.prop
