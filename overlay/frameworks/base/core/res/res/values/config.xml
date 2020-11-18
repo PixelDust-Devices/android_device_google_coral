@@ -543,4 +543,7 @@
         <!-- ID0:Fingerprint:Strong -->
         <item>0:8:15</item>
     </string-array>
+
+    <!-- Whether the device has native Active Edge support -->
+    <bool name="config_has_elmyra">true</bool>
 </resources>
