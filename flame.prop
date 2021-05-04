@@ -1,7 +1,7 @@
 # Pixel identification
-ro.build.fingerprint=google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys
+ro.build.fingerprint=google/flame/flame:11/RQ2A.210505.002/7246365:user/release-keys
 ro.product.manufacturer=Google
 ro.product.device=flame
 ro.product.brand=google
 ro.product.name=redfin
-ro.product.model=Pixel 5
+ro.product.model=Pixel 4
