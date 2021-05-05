@@ -32,9 +32,6 @@ while [ "$1" != "" ]; do
                                 SECTION=$1
                                 CLEAN_VENDOR=false
                                 ;;
-        --flame )               shift
-                                FLAME_SRC=$1
-                                ;;
         --coral )               shift
                                 CORAL_SRC=$1
                                 ;;
@@ -62,12 +59,5 @@ setup_vendor "$DEVICE" "$VENDOR" "$PIXELDUST_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/coral-proprietary-files.txt "$CORAL_SRC" --section "$SECTION"
 extract "$MY_DIR"/coral-proprietary-files-vendor.txt "$CORAL_SRC" --section "$SECTION"
-
-# Reinitialize the helper for flame
-DEVICE=flame
-setup_vendor "$DEVICE" "$VENDOR" "$PIXELDUST_ROOT" false "$CLEAN_VENDOR"
-
-extract "$MY_DIR"/flame-proprietary-files.txt "$FLAME_SRC" --section "$SECTION"
-extract "$MY_DIR"/flame-proprietary-files-vendor.txt "$FLAME_SRC" --section "$SECTION"
 
 "$MY_DIR"/setup-makefiles.sh

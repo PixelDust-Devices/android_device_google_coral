@@ -18,7 +18,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 PIXELDUST_ROOT="$MY_DIR"/../../..
 
-HELPER="$PIXELDUST_ROOT"/tools/extract-utils/extract_utils.sh
+HELPER="$PIXELDUST_ROOT"/vendor/pixeldust/build/tools/extract_utils.sh
 
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
@@ -30,26 +30,10 @@ fi
 setup_vendor "$DEVICE" "$VENDOR" "$PIXELDUST_ROOT" true
 
 # Warning headers and guards
-write_headers "coral flame"
+write_headers "coral"
 
 write_makefiles "$MY_DIR"/coral-proprietary-files.txt true
 write_makefiles "$MY_DIR"/coral-proprietary-files-vendor.txt true
-
-cat << EOF >> "$ANDROIDMK"
-EOF
-
-# Finish coral
-write_footers
-
-# Reinitialize the helper
-DEVICE=flame
-setup_vendor "$DEVICE" "$VENDOR" "$PIXELDUST_ROOT"
-
-# Copyright headers and guards
-write_headers
-
-write_makefiles "$MY_DIR"/flame-proprietary-files.txt true
-write_makefiles "$MY_DIR"/flame-proprietary-files-vendor.txt true
 
 cat << EOF >> "$ANDROIDMK"
 EOF
