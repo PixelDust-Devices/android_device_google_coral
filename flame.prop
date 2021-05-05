@@ -3,5 +3,5 @@ ro.build.fingerprint=google/flame/flame:11/RQ2A.210505.002/7246365:user/release-
 ro.product.manufacturer=Google
 ro.product.device=flame
 ro.product.brand=google
-ro.product.name=redfin
+ro.product.name=flame
 ro.product.model=Pixel 4
